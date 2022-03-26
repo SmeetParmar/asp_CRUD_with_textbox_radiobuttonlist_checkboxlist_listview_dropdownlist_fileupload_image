@@ -8,11 +8,6 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
 
- //DeleteCommand="DELETE FROM [table] WHERE [id] = @id" 
- //       InsertCommand="INSERT INTO [table] ([name], [address], [xender], [hobi], [food], [item], [foto]) VALUES (@name, @address, @xender, @hobi, @food, @item, @foto)" 
- //       ProviderName="<%$ ConnectionStrings:DatabaseConnectionString1.ProviderName %>" 
- //       SelectCommand="SELECT [id], [name], [address], [xender], [hobi], [food], [item], [foto] FROM [table]" 
- //       UpdateCommand="UPDATE [table] SET [name] = @name, [address] = @address, [xender] = @xender, [hobi] = @hobi, [food] = @food, [item] = @item, [foto] = @foto WHERE [id] = @id"
 public partial class _Default : System.Web.UI.Page
 {
     SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["DatabaseConnectionString1"].ConnectionString);
